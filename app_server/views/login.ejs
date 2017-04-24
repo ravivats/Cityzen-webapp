@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Standard Meta -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <!-- Site Properties -->
+  <title><%= title %></title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.js"></script>
+
+  <style type="text/css">
+    body {
+      background-color: #fffcfc;
+    }
+    body > .grid {
+      height: 100%;
+    }
+    .image {
+      margin-top: -100px;
+    }
+    .column {
+      max-width: 450px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="ui middle aligned center aligned grid">
+  <div class="column">
+    <h2 class="ui teal image header">
+      <a href="/"><img src="../images/ctyz-white.png" class="ui medium image"></a>
+    </h2>
+      <div class="ui stacked segment">
+        <h1 class="ui centered header">Sign In</h1>
+        <a class="ui fluid massive facebook button" href="/auth/facebook"><i class="facebook f icon"></i>Facebook</a>
+      </div>
+    <div class="ui message">
+      New to us? <a href="../signup">Sign Up</a>
+    </div>
+  </div>
+</div>
+
+</body>
+
+</html>
