@@ -94,7 +94,7 @@ module.exports.register = function (req, res) {
             SM.find({category: categoryname, areapin: req.cookies.pin}, function(err, comp){
                 comp.smScore  = textsimilarity(total, req.body.complaindesc);
                 SM.update({ category: categoryname, areapin: req.cookies.pin }, { $set: { smScore: textsimilarity(total, req.body.complaindesc) }}).exec();
-                SM.find({areapin: req.cookies.pin}).where('smScore').gt(0.3).lt(10).exec(function(err, score){
+                SM.find({areapin: req.cookies.pin}).where('smScore').gt(0.3).lt(1.0).exec(function(err, score){
                     if(err) throw err;
                     if(score.length > 0){
                         if(sm.length >= 5){
@@ -127,7 +127,7 @@ module.exports.approve = function(req,res) {
         {safe: true, upsert: true},
         function (err, doc) {
             if(err) throw err;
-            var plus = Number("0.01");
+            var plus = Number("0.1");
             doc.PriorityScore+= plus;
             doc.save;
             res.send("done");
