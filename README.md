@@ -1,6 +1,6 @@
 # Cityzen-webapp
 
-## Cityzen--Intelligent Complaint Addressal System
+##  Cityzen - An Intelligent Complaint Addressal System
 
 The proposed complaint addressal system has two different sides/panels. One side is for the citizens who use the application to make the authorities know about their grievances by lodging complaints. The other side is for the concerned authorities to take a look at public grievances and take necessary actions to adress them.
 
